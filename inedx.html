@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NEWS APP API Projects</title>
+
+  <!--CSS link-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <!--container-->
+  <div class="container">
+
+    <nav>
+
+      <div class="logo">
+        <h1>Daily news</h1>
+        <li id="politics" onclick="navClick('politics')">Politic's</li>
+        <li id="sports"  onclick="navClick('sports')">Sports</li>
+        <li  id="technology" onclick="navClick('technology')">Technology</li>
+      </div>
+      <br>
+
+      <div class="category">
+        <h1 id="type"></h1>
+      </div>
+
+
+      <!--search bar-->
+      <div class="searchBar">
+        <input type="text" placeholder="Search Here" value="" id="inputData">
+        <button  id="searchBtn">Search</button>
+
+
+      </div>
+
+    </nav>
+
+
+    <!--for result-->
+    <div class="cardData">
+      
+      
+    </div>
+  </div>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<!--script js-->
+<script src="script.js"></script>
+  
+</body>
+</html>

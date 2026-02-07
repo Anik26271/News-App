@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: silver;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 16px;
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  
+
+}
+.logo li{
+  list-style: none;
+  margin-inline: 25px;
+  font-size: 19px;
+}
+
+/* hover effect*/
+.logo li:hover{
+  color: rgb(70, 128, 198);
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+.searchBar{
+  display: flex;
+
+}
+.searchBar input{
+  width: 220px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  margin-inline: 5px;
+  border-radius: 3px;
+
+
+}
+.searchBar button{
+  width: 60px;
+  height: 44px;
+  background-color: rgb(18, 103, 200);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  
+  
+}
+
+.cardData{
+  display: grid;
+  justify-content: center;
+  width: 80%;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: auto;
+  margin-top: 122px;
+
+}
+.card{
+  
+  background-color: #fff;
+  padding: 11px;
+  margin-top: 25px;
+  cursor: pointer;
+  margin-inline: 11px;
+
+
+}
+.card img{
+  width: 100%;
+  height: 45%;
+
+
+}
+.card h3{
+  margin-top: 10px;
+  padding: 3px;
+
+}
+.card p{
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.category {
+  position: absolute;
+  margin-top: 122px;
+  color: black;
+  margin-left: 137px;
+}
+/* for responsive design*/
+
+@media only screen and (max-width:900px){
+  li{
+    display: none;
+
+  }
+
+}
+
+
+@media only screen and (max-width:535px){
+  nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .logo{
+    justify-content: center;
+  }
+  .searchBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .category{
+    margin-top: 220px;
+    text-align: center;
+  }
+}
